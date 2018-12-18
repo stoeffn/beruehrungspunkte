@@ -4,6 +4,7 @@
   "description": "Software Prototype for university design project \"Berührungspunkte\"",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/stoeffn/beruehrungspunkte/issues"
   },
-  "homepage": "https://github.com/stoeffn/beruehrungspunkte#readme"
+  "homepage": "https://github.com/stoeffn/beruehrungspunkte#readme",
+  "devDependencies": {
+    "css-loader": "^2.0.1",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
+    "vue": "^2.5.21",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
