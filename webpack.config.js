@@ -1,33 +1,33 @@
-var path = require('path')
-var webpack = require('webpack')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+var path = require("path")
+var webpack = require("webpack")
+const VueLoaderPlugin = require("vue-loader/lib/plugin")
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: "./src/index.ts",
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "/dist/",
+    filename: "build.js"
   },
   module: {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
+        loader: "vue-loader",
         options: {
           loaders: {
             // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
             // the "scss" and "sass" values for the lang attribute to the right configs here.
             // other preprocessors should work out of the box, no loader config like this necessary.
-            'scss': 'vue-style-loader!css-loader!sass-loader',
-            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+            "scss": "vue-style-loader!css-loader!sass-loader",
+            "sass": "vue-style-loader!css-loader!sass-loader?indentedSyntax",
           }
           // other vue-loader options go here
         }
       },
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
+        loader: "ts-loader",
         exclude: /node_modules/,
         options: {
           appendTsSuffixTo: [/\.vue$/],
@@ -35,14 +35,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[name].[ext]?[hash]'
+          name: "[name].[ext]?[hash]"
         }
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       }
     ]
   },
@@ -50,9 +50,9 @@ module.exports = {
     new VueLoaderPlugin()
   ],
   resolve: {
-    extensions: ['.ts', '.js', '.vue', '.json'],
+    extensions: [".ts", ".js", ".vue", ".json"],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      "vue$": "vue/dist/vue.esm.js"
     }
   },
   devServer: {
@@ -62,16 +62,16 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: "#eval-source-map"
 }
 
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
+if (process.env.NODE_ENV === "production") {
+  module.exports.devtool = "#source-map"
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
+      "process.env": {
+        NODE_ENV: ""production""
       }
     }),
     new webpack.optimize.UglifyJsPlugin({

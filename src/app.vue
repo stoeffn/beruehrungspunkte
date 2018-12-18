@@ -1,24 +1,14 @@
 <template>
   <b-container>
-    <story-preview-component :story="story">Lorem ipsum dolor sit amet.</story-preview-component>
+    <timeline-component />
   </b-container>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import StoryPreviewComponent from "./stories/story-preview.vue";
+import TimelineComponent from "./timeline/timeline.vue";
 
 export default Vue.extend({
-  components: { StoryPreviewComponent },
-  data: () => {
-    return {
-      story: {
-        title: "Compelling Title"
-      }
-    };
-  }
+  components: { TimelineComponent }
 });
 </script>
-
-<style>
-</style>
