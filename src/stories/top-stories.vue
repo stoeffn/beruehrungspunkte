@@ -13,23 +13,46 @@
         position: 'top-left'
       }"
     />
+    <div class="top-stories-container px-5">
+      <story-preview-component title="Compelling Title" />
+      <story-preview-component title="Compelling Title" />
+      <story-preview-component title="Compelling Title" />
+      <story-preview-component title="Compelling Title" />
+      <story-preview-component title="Compelling Title" />
+      <story-preview-component title="Compelling Title" />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Mapbox from "mapbox-gl-vue";
+import StoryPreviewComponent from "../stories/story-preview.vue";
 
 export default Vue.extend({
-  components: { Mapbox }
+  components: { Mapbox, StoryPreviewComponent }
 });
 </script>
 
 <style>
   .top-stories-map {
     width: 100%;
-    height: 256px;
   }
+  .top-stories-container {
+    margin-top: -100px;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .top-stories-container > div {
+    display: inline-block;
+    width: 320px;
+    margin: 8px;
+  }
+
+  .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+    bottom: 100px !important;
+  }
+
   @media (min-width: 768px) {
     .top-stories-map {
       height: 512px;
