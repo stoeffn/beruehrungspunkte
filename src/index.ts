@@ -11,5 +11,5 @@ Vue.use(BootstrapVue);
 let app = new Vue({
     el: "#app",
     template: `<app-component />`,
-    components: {AppComponent}
+    components: { AppComponent }
 });
