@@ -1,5 +1,5 @@
 <template>
-  <div class="story-thumbnail" />
+  <div class="story-thumbnail"/>
 </template>
 
 <script lang="ts">
@@ -10,16 +10,15 @@ export default Vue.extend({});
 
 <style>
 .story-thumbnail {
-  margin: 16px;
-  width: 240px;
-  height: 150px;
+  width: 300px;
+  height: 180px;
 
   background-color: white;
-  box-shadow: 0 10px 25px 0 rgba(50, 94, 128, .2);
+  box-shadow: 0 10px 25px 0 rgba(50, 94, 128, 0.2);
   border-radius: 4px;
   cursor: pointer;
 
-  transition: transform .4s cubic-bezier(.4, 0, .2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   display: block;
 }

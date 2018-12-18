@@ -1,15 +1,22 @@
 <template>
   <b-container>
-    <story-thumbnail-component/>
+    <story-preview-component :story="story">Lorem ipsum dolor sit amet.</story-preview-component>
   </b-container>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import StoryThumbnailComponent from "./components/story-thumbnail.vue";
+import StoryPreviewComponent from "./stories/story-preview.vue";
 
 export default Vue.extend({
-  components: { StoryThumbnailComponent }
+  components: { StoryPreviewComponent },
+  data: () => {
+    return {
+      story: {
+        title: "Compelling Title"
+      }
+    };
+  }
 });
 </script>
 
