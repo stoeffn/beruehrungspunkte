@@ -1,9 +1,11 @@
 <template>
   <div>
     <top-stories-component/>
-    <b-container>
-      <timeline-component/>
-    </b-container>
+    <div class="bg-light">
+      <b-container>
+        <timeline-component/>
+      </b-container>
+    </div>
   </div>
 </template>
 

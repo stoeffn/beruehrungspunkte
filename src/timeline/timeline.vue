@@ -1,5 +1,5 @@
 <template>
-  <div class="my-4">
+  <div class="py-4">
     <timeline-month-component month="Diesen Monat">
       <b-col cols="12" sm="6" md="7">
         <story-preview-component title="Compelling Title">Lorem ipsum dolor sit amet.</story-preview-component>
