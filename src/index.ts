@@ -5,6 +5,7 @@ import AppComponent from "./app.vue";
 
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap-vue/dist/bootstrap-vue.css"
+import "mapbox-gl/dist/mapbox-gl.css";
 
 Vue.use(BootstrapVue);
 

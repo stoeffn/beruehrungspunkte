@@ -47,7 +47,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new webpack.ProvidePlugin({
+      mapboxgl: "mapbox-gl"
+    })
   ],
   resolve: {
     extensions: [".ts", ".js", ".vue", ".json"],
@@ -71,7 +74,7 @@ if (process.env.NODE_ENV === "production") {
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       "process.env": {
-        NODE_ENV: ""production""
+        NODE_ENV: "production"
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
