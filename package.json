@@ -1,0 +1,19 @@
+{
+  "name": "beruehrungspunkte",
+  "version": "0.1.0",
+  "description": "Software Prototype for university design project \"Berührungspunkte\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoeffn/beruehrungspunkte.git"
+  },
+  "author": "Steffen Ryll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stoeffn/beruehrungspunkte/issues"
+  },
+  "homepage": "https://github.com/stoeffn/beruehrungspunkte#readme"
+}
