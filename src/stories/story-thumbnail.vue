@@ -1,7 +1,9 @@
 <template>
   <div class="story-thumbnail-container">
     <div class="story-thumbnail-spacer" />
-    <div class="story-thumbnail" />
+    <div class="story-thumbnail">
+      <img class="story-thumbnail-image" src="img/story-thumbnail.jpg" />
+    </div>
   </div>
 </template>
 
@@ -27,6 +29,7 @@ export default Vue.extend({});
   left: 0;
   right: 0;
   min-width: 128px;
+  overflow: hidden;
 
   background-color: white;
   box-shadow: 0 10px 25px 0 rgba(50, 94, 128, .2);
@@ -40,5 +43,13 @@ export default Vue.extend({});
 }
 .story-thumbnail:active {
   filter: brightness(92.5%);
+}
+.story-thumbnail-image {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
 }
 </style>
