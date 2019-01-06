@@ -1,5 +1,8 @@
 <template>
   <div class="story-thumbnail-container">
+    <audio id="story-audio-preview">
+      <source src="audio/test.wav" />
+    </audio>
     <div class="story-thumbnail-spacer" />
     <div class="story-thumbnail">
       <img class="story-thumbnail-image" src="img/story-thumbnail.jpg" />
@@ -11,6 +14,30 @@
 import Vue from "vue";
 
 export default Vue.extend({});
+</script>
+
+<script>
+
+function initialize() {
+  const elements = document.getElementsByClassName("story-thumbnail");
+
+  for (var i = 0; i < elements.length; ++i) {
+    elements[i].addEventListener("mouseenter", playSound);
+    elements[i].addEventListener("mouseleave", stopSound);
+  }
+}
+
+function playSound() {
+    const audio = document.getElementById("story-audio-preview");
+    audio.play();
+}
+
+function stopSound() {
+    const audio = document.getElementById("story-audio-preview");
+    audio.pause();
+}
+
+window.onload = initialize;
 </script>
 
 <style>
