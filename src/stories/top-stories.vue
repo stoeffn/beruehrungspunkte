@@ -58,6 +58,10 @@ export default Vue.extend({
 </script>
 
 <style>
+  .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-top-left {
+    left: 72px !important;
+  }
+
   .top-stories-map {
     z-index: -1;
     position: fixed !important;
