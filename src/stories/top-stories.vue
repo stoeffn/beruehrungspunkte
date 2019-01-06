@@ -46,11 +46,12 @@ export default Vue.extend({
   },
   methods: {
     onScroll() {
-      if (document.body.scrollTop <= 64) {
+      const scrollPosition = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0) - 192;
+      if (scrollPosition <= 0) {
         this.mapBlur = "none";
       } else {
-        const radius = (document.body.scrollTop - 64) / 12;
-        const saturation = 100 + (document.body.scrollTop - 64) / 4;
+        const radius = scrollPosition / 12;
+        const saturation = 100 + scrollPosition / 4;
         this.mapBlur = `blur(${radius <= 16 ? radius : 16}px) saturate(${saturation <= 180 ? saturation : 180}%)`;
       }
     },
