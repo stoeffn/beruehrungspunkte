@@ -48,6 +48,10 @@ export default Vue.extend({
     width: 64px;
     z-index: 1024;
     overflow-x: visible;
+    background-color: #F8F9FA96;
+  }
+  .menu:hover {
+    background-color: #F8F9FA00;
   }
   .menu-content {
     position: fixed;
