@@ -2,7 +2,22 @@
   <div class="menu">
     <div class="menu-background" />
     <div class="menu-content">
-      
+      <div class="menu-item">
+        <img src="img/star.png" />
+        <p>Top Stories</p>
+      </div>
+      <div class="menu-item">
+        <h3>01/19</h3>
+        <p>Januar 2019</p>
+      </div>
+      <div class="menu-item">
+        <h3>12/18</h3>
+        <p>Dezember 2018</p>
+      </div>
+      <div class="menu-item">
+        <h3>11/18</h3>
+        <p>November 2018</p>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +44,7 @@ export default Vue.extend({});
     top: 0;
     bottom: 0;
     width: 64px;
+    overflow-x: hidden;
 
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -37,6 +53,7 @@ export default Vue.extend({});
   }
   .menu:hover .menu-content {
     width: 320px;
+    overflow-x: visible;
 
     background-color: #ffffff96;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -55,5 +72,39 @@ export default Vue.extend({});
   }
   .menu:hover .menu-background {
     background: #00000048;
+  }
+  .menu-item {
+    width: 320px;
+    cursor: pointer;
+
+    transition: transform 0.4s cubic-bezier(.4, 0, .2, 1);
+  }
+  .menu-item:hover {
+    box-shadow: 0 10px 25px 0 rgba(50, 94, 128, .2);
+    background-color: #ffffff;
+    transform: scale(1.02);
+  }
+  .menu-item:active {
+    filter: brightness(92.5%);
+  }
+  .menu-item h3, .menu-item p {
+    display: inline-block;
+    padding: 16px 6px;
+    margin: 0;
+  }
+  .menu-item img {
+    margin: 12px 16px;
+    height: 32px;
+    width: 32px;
+
+    opacity: .85;
+  }
+  .menu-item h3 {
+    font-size: 20px;
+    opacity: .85;
+  }
+  .menu-item p {
+    opacity: .7;
+    font-size: 17px;
   }
 </style>
