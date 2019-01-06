@@ -1,31 +1,42 @@
 <template>
   <div class="menu">
     <div class="menu-background" />
-    <div class="menu-content">
-      <div class="menu-item">
+    <b-nav class="menu-content" v-b-scrollspy:nav-scroller>
+      <div @click="scrollIntoView" href="#top-stories" class="menu-item">
         <img src="img/star.png" />
         <p>Top Stories</p>
       </div>
-      <div class="menu-item">
+      <div @click="scrollIntoView" href="#january-2019" class="menu-item">
         <h3>01/19</h3>
         <p>Januar 2019</p>
       </div>
-      <div class="menu-item">
+      <div @click="scrollIntoView" href="#december-2018" class="menu-item">
         <h3>12/18</h3>
         <p>Dezember 2018</p>
       </div>
-      <div class="menu-item">
+      <div @click="scrollIntoView" href="#november-2018" class="menu-item">
         <h3>11/18</h3>
         <p>November 2018</p>
       </div>
-    </div>
+    </b-nav>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({});
+export default Vue.extend({
+  methods: {
+    scrollIntoView(evt: any) {
+      evt.preventDefault();
+      const href = evt.target.getAttribute('href');
+      const el = href ? document.querySelector(href) : null;
+      if (el) {
+        document.scrollingElement.scrollTop = el.offsetTop - 8;
+      }
+    }
+  },
+});
 </script>
 
 <style>
@@ -45,6 +56,7 @@ export default Vue.extend({});
     bottom: 0;
     width: 64px;
     overflow-x: hidden;
+    display: initial !important;
 
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -86,6 +98,9 @@ export default Vue.extend({});
   }
   .menu-item:active {
     filter: brightness(92.5%);
+  }
+  .menu-item h3, .menu-item p, .menu-item img {
+    pointer-events: none;
   }
   .menu-item h3, .menu-item p {
     display: inline-block;

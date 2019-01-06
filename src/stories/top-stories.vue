@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div id="top-stories" />
     <mapbox
       class="top-stories-map"
       access-token="pk.eyJ1Ijoic3RvZWZmbiIsImEiOiJjanB1MXZhajAwNzNpM3hwdTZ3bngybXZkIn0.aarS9BWZ55ymMRU_ATMZgA"
@@ -60,6 +61,11 @@ export default Vue.extend({
 <style>
   .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-top-left {
     left: 72px !important;
+  }
+
+  #top-stories {
+    position: absolute;
+    top: 0;
   }
 
   .top-stories-map {
