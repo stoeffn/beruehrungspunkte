@@ -7,7 +7,7 @@
       :style="{ filter: mapBlur }"
       :map-options="{
         style: 'mapbox://styles/stoeffn/cjpu4ztqv01572smwk4mjwzkb',
-        center: [9.7326, 52.3726],
+        center: [9.7326, 52.3556],
         zoom: 12
       }"
       :geolocate-control="{
@@ -81,7 +81,9 @@ export default Vue.extend({
     padding: 0 calc(72px - 8px);
     overflow-x: scroll;
     white-space: nowrap;
+    background-image: linear-gradient(#F8F9FA00, #F8F9FAFF);
   }
+
   .top-stories-container > div {
     display: inline-block;
     width: 320px;
@@ -96,7 +98,7 @@ export default Vue.extend({
 
   @media (min-width: 768px) {
     .top-stories-map {
-      height: 512px;
+      height: 768px;
     }
     .top-stories-container {
       margin-top: 412px;
