@@ -19,3 +19,9 @@ export default Vue.extend({
   components: { TopStoriesComponent, TimelineComponent }
 });
 </script>
+
+<style>
+  .container {
+    padding-left: 72px !important;
+  }
+</style>

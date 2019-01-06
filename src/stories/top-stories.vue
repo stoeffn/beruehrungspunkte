@@ -67,7 +67,7 @@ export default Vue.extend({
   }
   .top-stories-container {
     margin-top: 284px;
-    padding: 0 7px;
+    padding: 0 calc(72px - 8px);
     overflow-x: scroll;
     white-space: nowrap;
   }
@@ -79,7 +79,7 @@ export default Vue.extend({
 
   @media (min-width: 576px) {
     .top-stories-container {
-      padding: 0 calc((100% - 540px) / 2 + 7px);
+      padding: 0 calc((100% - 540px) / 2 + 72px - 8px);
     }
   }
 
@@ -89,7 +89,7 @@ export default Vue.extend({
     }
     .top-stories-container {
       margin-top: 412px;
-      padding: 0 calc((100% - 720px) / 2 + 7px);
+      padding: 0 calc((100% - 720px) / 2 + 72px - 8px);
     }
 
     .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
@@ -99,13 +99,13 @@ export default Vue.extend({
 
   @media (min-width: 992px) {
     .top-stories-container {
-      padding: 0 calc((100% - 960px) / 2 + 7px);
+      padding: 0 calc((100% - 960px) / 2 + 72px - 8px);
     }
   }
 
   @media (min-width: 1200px) {
     .top-stories-container {
-      padding: 0 calc((100% - 1140px) / 2 + 7px);
+      padding: 0 calc((100% - 1140px) / 2 + 72px - 8px);
     }
   }
 </style>
