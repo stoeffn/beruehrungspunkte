@@ -12,7 +12,7 @@
       }"
       :geolocate-control="{
         show: true,
-        position: 'top-left'
+        position: 'top-right'
       }"
     />
     <div class="top-stories-container">
