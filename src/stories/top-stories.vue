@@ -14,7 +14,7 @@
         position: 'top-left'
       }"
     />
-    <div class="top-stories-container px-5">
+    <div class="top-stories-container">
       <story-preview-component title="Compelling Title" />
       <story-preview-component title="Compelling Title" />
       <story-preview-component title="Compelling Title" />
@@ -67,6 +67,7 @@ export default Vue.extend({
   }
   .top-stories-container {
     margin-top: 284px;
+    padding: 0 7px;
     overflow-x: scroll;
     white-space: nowrap;
   }
@@ -76,16 +77,35 @@ export default Vue.extend({
     margin: 8px;
   }
 
+  @media (min-width: 576px) {
+    .top-stories-container {
+      padding: 0 calc((100% - 540px) / 2 + 7px);
+    }
+  }
+
   @media (min-width: 768px) {
     .top-stories-map {
       height: 512px;
     }
     .top-stories-container {
       margin-top: 412px;
+      padding: 0 calc((100% - 720px) / 2 + 7px);
     }
 
     .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
       bottom: 100px !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .top-stories-container {
+      padding: 0 calc((100% - 960px) / 2 + 7px);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .top-stories-container {
+      padding: 0 calc((100% - 1140px) / 2 + 7px);
     }
   }
 </style>

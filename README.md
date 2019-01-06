@@ -8,7 +8,7 @@ npm install
 
 ## Building
 
-```
+```bash
 npm run build -- --watch --mode development
 ```
 
