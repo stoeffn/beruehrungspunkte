@@ -1,15 +1,19 @@
 <template>
-  <div class="story-container" v-b-modal.storyModal>
-    <div class="row">
-      <p>Bild</p>
-      <h2>Mein Leben am Raschplatz</h2>
-      
-      
+  <div class="story-container">
+    <div class="story">
+      <img class="story-picture" src="img/story-thumbnail.jpg" />
+      <h1> Trees </h1>
+      <div id="floated"> Some really interesting things about this good ass locking tree. And blablabla blablab lablab labla blablab lablablab lablablabl ablablab lablab labla bl ablabla blablabl ablab lablablab lablabla blablablabl abl ablablablab lablablabl abla blablabl ablablabl ablabl ablabla blabl abla blabla blabla blabl ablab labla bla bla blaalalalalal vlallablalblalblabl alblallablalbla blablalbal blalblalbla blalbalblab ablalbalbl abllablalba balblabl abllablalblabl </div>
     </div>
-    <p>Hallo</p>
-    <!-- <div class="story-picture">
-      <img class="story-image" src="img/story-thumbnail.jpg" />
-    </div> -->
+    <div class="comments">
+      <h2> Comments </h2>
+      <p> Write your own stupid comment: </p>
+      <form action="writeComment">
+        <input type="text" name="comment">
+      </form>
+      <h3> Top Comments: </h3>
+      <p> stupid </p>
+    </div>
   </div>
 </template>
 
@@ -21,35 +25,39 @@ export default Vue.extend({});
 
 <style>
 .story-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  width: 100%;
 }
-.story-image {
-  margin: 0;
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* height: 100%; */
-}
-.cell {
-  padding: 10pt;
-  margin: 10pt;
-}
-.row {
-  display: flex;
-}
-.story-picture {
-  display: inline;
-  min-width: 128px;
-  overflow: hidden;
-  flex: 1 1 auto;
-  box-flex: 1;
-  max-width: 128px;
 
-  /* background-color: white;
-  box-shadow: 0 10px 25px 0 rgba(50, 94, 128, .2);
-  border-radius: 4px; */
-  cursor: pointer;
+.story {
+  background-color: white;
+  display: block;
 }
+
+.story-picture {
+  float: left;
+  max-width: 30%;
+  height: auto;
+  margin: 0 20px 20px 0;
+}
+
+#floated {
+  text-align: justify;
+  width: 100%;
+}
+
+.comments {
+  margin-top: 50px;
+}
+
+input {
+  width: 75%;
+  height: 30px;
+}
+
+h3 {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
 </style>
