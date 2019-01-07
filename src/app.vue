@@ -10,7 +10,8 @@
     <b-modal id="storyModal" size="lg">
       <story-component />
       <div slot="modal-footer" />
-  </b-modal>
+    </b-modal>
+    <footer-component />
   </div>
 </template>
 
@@ -21,9 +22,10 @@ import TopStoriesComponent from "./stories/top-stories.vue";
 import StoryComponent from "./stories/story.vue";
 import TimelineComponent from "./timeline/timeline.vue";
 import MenuComponent from "./menu.vue";
+import FooterComponent from "./footer/footer.vue"
 
 export default Vue.extend({
-  components: { TopStoriesComponent, StoryComponent, TimelineComponent, MenuComponent }
+  components: { TopStoriesComponent, StoryComponent, TimelineComponent, MenuComponent, FooterComponent }
 });
 </script>
 
