@@ -1,5 +1,5 @@
 <template>
-  <div class="story-thumbnail-container">
+  <div class="story-thumbnail-container" v-b-modal.storyModal>
     <audio id="story-audio-preview">
       <source src="audio/test.wav" />
     </audio>

@@ -7,6 +7,10 @@
       </b-container>
     </div>
     <menu-component />
+    <b-modal id="storyModal" size="lg">
+      <story-component />
+      <div slot="modal-footer" />
+  </b-modal>
   </div>
 </template>
 
@@ -14,11 +18,12 @@
 import Vue from "vue";
 
 import TopStoriesComponent from "./stories/top-stories.vue";
+import StoryComponent from "./stories/story.vue";
 import TimelineComponent from "./timeline/timeline.vue";
 import MenuComponent from "./menu.vue";
 
 export default Vue.extend({
-  components: { TopStoriesComponent, TimelineComponent, MenuComponent }
+  components: { TopStoriesComponent, StoryComponent, TimelineComponent, MenuComponent }
 });
 </script>
 
