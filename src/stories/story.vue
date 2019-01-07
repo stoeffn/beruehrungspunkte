@@ -2,17 +2,38 @@
   <div class="story-container">
     <div class="story">
       <img class="story-picture" src="img/story-thumbnail.jpg" />
-      <h1> Trees </h1>
-      <div id="floated"> Some really interesting things about this good ass locking tree. And blablabla blablab lablab labla blablab lablablab lablablabl ablablab lablab labla bl ablabla blablabl ablab lablablab lablabla blablablabl abl ablablablab lablablabl abla blablabl ablablabl ablabl ablabla blabl abla blabla blabla blabl ablab labla bla bla blaalalalalal vlallablalblalblabl alblallablalbla blablalbal blalblalbla blalbalblab ablalbalbl abllablalba balblabl abllablalblabl </div>
+      <h1> Mein Leben am Raschplatz </h1>
+      <div id="floated"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "Pfandflaschen sind unsere Währung" . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Was treibt dich an? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Was war...? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div>
     </div>
     <div class="comments">
       <h2> Comments </h2>
-      <p> Write your own stupid comment: </p>
+      <p> Leave a comment: </p>
       <form action="writeComment">
-        <input type="text" name="comment">
+        Name:
+        <input class="comment-form-user" type="text" name="user">
+        <br>
+        <br>
+        Comment:
+        <input class="comment-form-comment" type="text" name="comment">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <br>
       </form>
       <h3> Top Comments: </h3>
-      <p> stupid </p>
+      <div class="comment">
+        <b> Laura </b>
+        <p> Sehr bewegende Lebensgeschichte. </p>
+      </div>
+      <div class="comment">
+        <b> Sven </b>
+        <p> Selten las ich besseres. </p>
+      </div>
     </div>
   </div>
 </template>
@@ -51,13 +72,27 @@ export default Vue.extend({});
 }
 
 input {
-  width: 75%;
+  position: absolute;
+  left: 100px;
+}
+
+.comment-form-user {
+  width: 30%;
   height: 30px;
+}
+
+.comment-form-comment {
+  width: 60%;
+  height: 120px;
 }
 
 h3 {
   margin-top: 40px;
   font-size: 14px;
+}
+
+.comment {
+  margin-left: 20px;
 }
 
 </style>
